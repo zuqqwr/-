@@ -1,0 +1,163 @@
+#1
+a = int(input())
+b = int(input())
+if a < b:
+    x = a+b
+elif a > b:
+    x = a-b
+else:
+    x = 1
+print(x)
+
+#2
+f = int(input())
+k = int(input())
+if f < 5 and k > 2:
+  R = f + k - 1
+elif k < 2:
+  R = k**2
+else:
+  R = 1
+print(R)
+
+#3
+a = int(input())
+b = int(input())
+if a < b:
+    c = a+b
+elif a > b and a > 3:
+    c = b**2 - b
+else:
+    c = b**2 - 1
+print(c)
+
+#4
+v = int(input())
+k = int(input())
+if v < k:
+    Z = v - k + 1
+elif k > v:
+    Z = k**2 - v**2
+else:
+    Z = k**2 - k
+print(Z)
+
+#5
+f = int(input())
+if f < 5:
+    z = f + 2
+elif f > 5:
+    z = f - 1
+else:
+    z = 1
+print(z)
+
+#6
+a = int(input())
+b = int(input())
+if a < b and b > 4:
+    x = a + b
+elif a > b:
+    x = a - b
+else:
+    x = a**2
+print(x)
+
+#7
+v = int(input())
+k = int(input())
+if v < 2 and k == 1:
+    B = v - k + 1
+elif k > v:
+    B =  k**2 + v**2
+else:
+    B =  k**2 + v
+print(B)
+
+#8
+x = int(input())
+y = int(input())
+if x < 2 and y == 2:
+    B = x*y + 1
+elif x > y:
+    B = y**2 + x**2
+else:
+    B =  x**2 + 2
+print(B)
+
+#9
+f = int(input())
+v = int(input())
+if f < 4 and v > 6:
+    S = f + v
+elif v < 6:
+    S = f**2
+else:
+    S = 2*v
+print(S)
+
+#10
+k = int(input())
+c = int(input())
+if k < 5 and c > 4:
+    X = k + c**2
+elif k > c and k > 3:
+    X = c**2 + 2
+else:
+    X = c - 1
+print(X)
+
+#11
+x = int(input())
+y = int(input())
+if x == 4 and y < 2:
+    q = x + x*y
+elif x < y:
+    q = y**2 + 1
+else:
+    q = y**2 + 4
+print(q)
+
+#12
+a = int(input())
+b = int(input())
+if a < b:
+    R =  a - b + 1
+elif a > b and a > 3:
+    R =  b**2 - b
+else:
+    R = b**2 - 1
+print(R)
+
+#13
+a = int(input())
+b = int(input())
+if a < b:
+    x = 2*a + 2*b
+elif a > b:
+    x = a - b + 1
+else:
+    x = b**2 - b
+print(x)
+
+#14
+f = int(input())
+k = int(input())
+if f < k:
+    R =  f + k**2 - 1
+elif k < 2 and f == 3:
+    R = k**2
+else:
+    R = f - 1
+print(R)
+
+#15
+a = int(input())
+b = int(input())
+if a < 2 and b > 3:
+    C = a + b**2
+elif a > b and a > 3:
+    C =  b**2 + 2
+else:
+    C = b
+print(C)
