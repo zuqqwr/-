@@ -1,0 +1,95 @@
+#1
+a = int(input("Введите начальное значение: "))
+b = int(input("Введите конечное значение: "))
+for i in range(a,b+1):
+  print(i)
+  
+#2
+a = int(input("Введите начальное значение: "))
+b = int(input("Введите конечное значение: "))
+if a<b:
+  for i in range(a,b+1):
+    print(i)
+if a>b:
+  for i in range(a,b-1,-1):
+    print(i)
+    
+#3
+a = int(input("Введите большее значение: "))
+b = int(input("Введите меньшее значение: "))
+if a<b:
+  print("Первое число должно быть больше!")
+if a>b: 
+  for i in range(a,b-1,-1):
+    if i%2==1:
+      print(i)
+
+#4
+import random
+n = int(input("Введите количество чисел: "))
+s=0
+for i in range (1,n+1):
+  a = random.randint(0,100)
+  print(a)
+  s+=a
+print("Сумма чисел равна ", s)
+
+#5
+n = int(input("Введите натуральное число: "))
+s=0
+for i in range(1,n+1):
+  s += i**3
+print("s=",s)
+
+#6
+n = int(input("Введите натуральное число: "))
+s=1
+for i in range(1,n+1):
+  s*=i
+print("s=",s)
+
+#7
+n = int(input("Введите натуральное число: "))
+f = 1
+s = 0
+for i in range(1, n + 1):
+  f*= i
+  s+= f
+print(s)
+
+#8
+n = int(input("Введите целое число, не большее 9: "))
+if n<=9:
+  for i in range(1,n+1):
+    for k in range(1,i+1):
+      print(k,end="")
+    print()
+else:
+  print("Число не удовлетворяет условию")
+ 
+ #9
+ def fib(n):
+    f0 = 0
+    f1 = 1
+    i = 0
+    while (i < n):
+        f0, f1, i = f0+f1, f0, i+1
+    return f0
+q=int(input("введите количество чисел из ряда Фибоначчи = "))
+g = (0, *(fib(n) for n in range(1,q)))
+print("ряд чисел до заданого числа = ",g)
+print("сумма этих чисел = ", sum(g))
+
+#10
+def fib(n):
+    f0 = 0
+    f1 = 1
+    i = 0
+    while (i < n):
+        f0, f1, i = f0+f1, f0, i+1
+    return f0
+k=int(input("введите порядковый номер с которого нужно начать = "))
+n=int(input("введите количество чисел из ряда Фибоначчи = "))
+g = (0, *(fib(n) for n in range(k-1,n)))
+print("ряд чисел до заданого числа = ", g)
+print("сумма этих чисел = ", sum(g))
