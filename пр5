@@ -42,8 +42,47 @@ for i in s1:
         g += i
 print(g+s2)
 
+#8
+s = input('введите текст = ')
+print(len(s.split()))
+
 #9 
 i=input('Введите текст = \n')
 a=input("введите искомое слово = ")
 k = i.count(a)
 print("итог = ", k)
+
+#10
+i=input("Введите предложение на английском языке\n")
+print("итог = ", i.title())
+
+#11
+import re
+s = input()
+n = re.findall('[Нн]+',s)
+n1 = map(len,n)
+print("самая длинная последовательность = ",max(n1))
+s1 = s.replace('!','.')
+print("итог = ", s1)
+
+#12
+x=input('Введите текст: \n')
+for a in x.split(" "):
+    if a.strip()[-1]=='я':
+        print(a)
+
+#13
+i=input("Введите предложение со скобками\n")
+x=i.replace('(','').replace(')','')
+print(x)
+
+#14
+x=input('Введите предложение: \n')
+for a in x.split(" "):
+    if a.strip()[0]=='а' and a.strip()[-1]=='я' :
+        print(a)
+
+#15
+i=input('введите текст = ')
+print(i.count('т'))
+
