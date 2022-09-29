@@ -1,0 +1,31 @@
+#1
+x=input('Введите текст: \n')
+i=0
+for a in x.split(" "):
+    if a.strip()[0]=='е':
+        i+=1
+print(i)
+
+#2
+x=input("Введите ':'\n")
+i=x.replace(":","%")
+print(i,"\n","кол-во замен =",i.count('%') )
+
+#3
+a = input('Введите текст \n')
+i = a.replace('.', '')
+print("кол-во удаленных = ", len(a) - len(i))
+print("итог = ",i)
+
+#4
+print("итог = ", *(lambda a: (a.replace("а", "o"),"\n кол во замен =", a.count("а"), "\n кол-во символов = ", len(a),))(input("введите текст = ")))
+
+#5
+s=input('Введите текст = ')
+print("итог = ", s.lower())
+
+#6
+i=input("Введите: \n")
+x=i.replace("а","")
+y=len(i)-len(x)
+print("итог = ", x,"\n кол-во удалений = ", y)
