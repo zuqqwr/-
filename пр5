@@ -30,6 +30,18 @@ x=i.replace("а","")
 y=len(i)-len(x)
 print("итог = ", x,"\n кол-во удалений = ", y)
 
+#7
+s = input('введите текст = ')
+s1 = s[:int((len(s)+1)/2)]
+s2 = s.replace(s1,'')
+g = ""
+for i in s1:
+    if i == "п":
+        g += "*"
+    else:
+        g += i
+print(g+s2)
+
 #9 
 i=input('Введите текст = \n')
 a=input("введите искомое слово = ")
