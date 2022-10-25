@@ -1,0 +1,26 @@
+#1
+def nums(n):
+    for numbers in str(n):
+        if numbers == '0' or n % int(numbers):
+            return False
+    return True
+
+x = int(input("введите число n = "))
+for i in range(1, x+1):
+    if nums(i):
+        print(i)
+
+#2
+def zamena(x):
+    z=x[0] #присваивает переменной первый элемент
+    x[0]=x[len(x)-1] #меняет последний элемент на место первого
+    x[len(x)-1]=z #меняет первый элемент на место последнего
+a=[]
+m=int(input('введите длину массива: '))
+for i in range(m):
+    print('введите', i, 'элемент массива: ')
+    a.append(int(input()))
+print("Исходный = ", a)
+zamena(a)
+print("Итог = ", a)
+  
