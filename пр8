@@ -1,0 +1,32 @@
+#ВАРИАНТ 8
+
+#1
+import numpy
+N = 3
+k = int(input("введите k: "))
+a = numpy.random.randint(1, 10, size=(N, N))
+print('матрица: \n',a)
+
+for n in range(0, len(a)):
+    print("диагональ =", a[n, n])
+for n in range(0, len(a)):
+    print(a[k, n], '/', a[n, n], '=', a[k, n] / a[n, n])
+
+#2
+import numpy
+n = 3
+a=[]
+for i in range(n):
+    b = []
+    for j in range(n):
+        print('введите [',i,',',j,'] элемент')
+        b.append(int(input()))
+    a.append(b)
+for i in range(n):
+    for j in range(n):
+        print(a[i][j], end= ' ')
+    print(' :Исходная матрица')
+
+numpy.transpose(a)
+for line in numpy.transpose(a):
+    print("транспонированная матрица: ",line)
