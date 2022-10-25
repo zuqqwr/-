@@ -1,3 +1,5 @@
+#ВАРИАНТ 8
+
 #1
 def nums(n):
     for numbers in str(n):
