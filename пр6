@@ -1,3 +1,5 @@
+#ВАРИАНТ 8
+
 #1
 from random import *
 t = [randint(1,8) for i in range(10)]
