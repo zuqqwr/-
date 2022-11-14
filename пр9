@@ -1,0 +1,15 @@
+s=open("C:/Users/Игорь/Desktop/Устелёмов Игорь Евгеньевич_УБ21_vivod.txt", 'w')
+f=open("C:/Users/Игорь/Desktop/Устелёмов Игорь Евгеньевич_УБ21_vvod.txt", 'r')
+for line in f:
+    a=list(map(int, line.split()))
+    print(a)
+
+g=[]
+import numpy
+numpy.transpose(a)
+for line in numpy.transpose(a):
+    print("транспонированная матрица: ",line)
+    g.append(line)
+s.write(str(g))
+f.close()
+s.close()
