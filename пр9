@@ -1,15 +1,33 @@
 s=open("C:/Users/Игорь/Desktop/Устелёмов Игорь Евгеньевич_УБ21_vivod.txt", 'w')
-f=open("C:/Users/Игорь/Desktop/Устелёмов Игорь Евгеньевич_УБ21_vvod.txt", 'r')
-for line in f:
-    a=list(map(int, line.split()))
-    print(a)
+f=open("C:/Users/Игорь/Desktop/Устелёмов Игорь Евгеньевич_УБ21_vvod.txt")
+a = [line.replace("\n", "").split('\n') for line in f]
+print(a)
 
-g=[]
-import numpy
-numpy.transpose(a)
-for line in numpy.transpose(a):
-    print("транспонированная матрица: ",line)
-    g.append(line)
-s.write(str(g))
+import pymatrix
+matrix = pymatrix.matrix(a)
+pymatrix_transponse = matrix.trans()
+print(matrix)
+s.write(str(pymatrix_transponse))
+
+line = a[0]
+lizt = line[0]
+ddd = lizt[0]
+line1 = a[1]
+lizt1 = line1[0]
+ddd1 = lizt1[2]
+line2 = a[2]
+lizt2 = line2[0]
+ddd2 = lizt2[4]
+fun = a[0]
+fun1 = fun[0]
+q = []
+x = int(fun1[0]) /  int(ddd)
+y = int(fun1[2]) / int(ddd1)
+z = int(fun1[4]) / int(ddd2)
+print('4 / 4 = ', x,'4 / 2 = ', y, '7 / 1 = ', z)
+q.append(x)
+q.append(y)
+q.append(z)
+s.write(str(q))
 f.close()
 s.close()
