@@ -1,0 +1,23 @@
+#БЛОК А
+def count(a, b):
+    if a < b:
+        count(a, b - 1)
+        print(b)
+    elif a > b:
+        print(a)
+        count(a - 1, b)
+    else:
+        print(a)
+
+
+a = int(input())
+b = int(input())
+count(a, b)
+
+#БЛОК Б
+def f():
+    s = [int(i) for i in input('Введите данные:').split() if int(i)]
+    print(*s[::2])
+f()
+
+
